@@ -36,7 +36,7 @@ jQuery(function($){
 	/*  2. Experience SLider(Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl = $("#owl-carousel"); 
+	var owl = $(".owl-carousel"); 
     owl.owlCarousel({
         items : 4, //4 items above 1024px browser width
         itemsDesktop : [1024,3], //3 items between 1024px and 901px
@@ -58,7 +58,7 @@ jQuery(function($){
 	/*  3. EDUCATION SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl1 = $("#owl-carousel"); 
+	var owl1 = $(".owl-carousel"); 
 	owl1.owlCarousel({
 	    items : 4, //4 items above 1024px browser width
 	    itemsDesktop : [1024,3], //3 items between 1024px and 901px
@@ -94,7 +94,7 @@ jQuery(function($){
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl2 = $("#owl-carousel"); 
+	var owl2 = $(".owl-carousel"); 
     owl2.owlCarousel({
         items : 2, //4 items above 1024px browser width
         itemsDesktop : [1024,2], //3 items between 1024px and 901px
