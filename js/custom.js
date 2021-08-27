@@ -58,23 +58,7 @@ jQuery(function($){
 	/*  3. EDUCATION SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl1 = $(".owl-carousel"); 
-	owl1.owlCarousel({
-	    items : 4, //4 items above 1024px browser width
-	    itemsDesktop : [1024,3], //3 items between 1024px and 901px
-	    itemsDesktopSmall : [900,2], // betweem 900px and 601px
-	    itemsTablet: [600,1], //1 items between 600 and 0
-	    itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
-	});
-	// Slide Navigation
-	jQuery(".next1").click(function(){
-	    owl1.trigger('owl.next');
-	});
 
-	jQuery(".prev1").click(function(){
-	    owl1.trigger('owl.prev');
-	});
-	
     /* ----------------------------------------------------------- */
 	/*  4. PORTFOLIO SLIDER
 	/* ----------------------------------------------------------- */
@@ -93,25 +77,6 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
-
-	var owl2 = $(".owl-carousel"); 
-    owl2.owlCarousel({
-        items : 2, //4 items above 1024px browser width
-        itemsDesktop : [1024,2], //3 items between 1024px and 901px
-        itemsDesktopSmall : [900,2], // betweem 900px and 601px
-        itemsTablet: [600,1], //1 items between 600 and 0
-        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
-    });
-
-    // Slide Navigation
-    jQuery(".next2").click(function(){
-        owl2.trigger('owl.next');
-    });
-
-    jQuery(".prev2").click(function(){
-        owl2.trigger('owl.prev');
-    });
-	 
 
 	/* ----------------------------------------------------------- */
 	/*  7. MENU SMOOTH SCROLLING
