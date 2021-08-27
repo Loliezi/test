@@ -36,16 +36,13 @@ jQuery(function($){
 	/*  2. Experience SLider(Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl = $(".doccat-carousel"); 
+	var owl = $("#owl-carousel"); 
     owl.owlCarousel({
-        items: 4,
-        /* transitionStyle : "fade", */
-        /* [This code for animation ] */
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [980, 2],
-        itemsTablet: [768, 1],
-        itemsMobile: [479, 1],
+        items : 4, //4 items above 1024px browser width
+        itemsDesktop : [1024,3], //3 items between 1024px and 901px
+        itemsDesktopSmall : [900,2], // betweem 900px and 601px
+        itemsTablet: [600,1], //1 items between 600 and 0
+        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
     });
     // Slide Navigation
     jQuery(".next").click(function(){
@@ -61,7 +58,23 @@ jQuery(function($){
 	/*  3. EDUCATION SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
+	var owl1 = $("#owl-carousel1"); 
+	owl1.owlCarousel({
+	    items : 4, //4 items above 1024px browser width
+	    itemsDesktop : [1024,3], //3 items between 1024px and 901px
+	    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+	    itemsTablet: [600,1], //1 items between 600 and 0
+	    itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
+	});
+	// Slide Navigation
+	jQuery(".next1").click(function(){
+	    owl1.trigger('owl.next');
+	});
 
+	jQuery(".prev1").click(function(){
+	    owl1.trigger('owl.prev');
+	});
+	
     /* ----------------------------------------------------------- */
 	/*  4. PORTFOLIO SLIDER
 	/* ----------------------------------------------------------- */
@@ -80,6 +93,25 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
+
+	var owl2 = $("#owl-carousel2"); 
+    owl2.owlCarousel({
+        items : 2, //4 items above 1024px browser width
+        itemsDesktop : [1024,2], //3 items between 1024px and 901px
+        itemsDesktopSmall : [900,2], // betweem 900px and 601px
+        itemsTablet: [600,1], //1 items between 600 and 0
+        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
+    });
+
+    // Slide Navigation
+    jQuery(".next2").click(function(){
+        owl2.trigger('owl.next');
+    });
+
+    jQuery(".prev2").click(function(){
+        owl2.trigger('owl.prev');
+    });
+	 
 
 	/* ----------------------------------------------------------- */
 	/*  7. MENU SMOOTH SCROLLING
@@ -139,7 +171,7 @@ jQuery(function($){
 
 	jQuery(window).load(function() { // makes sure the whole site is loaded
       $('.progress').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('#preloader').delay(10000).fadeOut('slow'); // will fade out the white DIV that covers the website.
       $('body').delay(100).css({'overflow':'visible'});
     })
 	  
