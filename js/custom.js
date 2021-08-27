@@ -36,7 +36,7 @@ jQuery(function($){
 	/*  2. Experience SLider(Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl = $("#owl-carousel"); 
+	var owl = $(".owl-carousel"); 
     owl.owlCarousel({
         items: 4,
         /* transitionStyle : "fade", */
