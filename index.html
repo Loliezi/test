@@ -491,18 +491,5 @@
       <!-- Custom Js -->
       <script src="js/custom.js"></script>
       <script>$(window).load(function(){$('#preloader').fadeOut()})</script>
-      <script>
-        .dark-mode {
-          background-color: black;
-          color: white;
-        }
-        function darkmode() {
-          const wasDarkmode = localStorage.getItem('darkmode') === 'true';
-          localStorage.setItem('darkmode', !wasDarkmode);
-          const element = document.body;
-          element.classList.toggle('dark-mode', !wasDarkmode);
-        }
-        document.body.classList.toggle('dark-mode', localStorage.getItem('darkmode') === 'true');
-</script>
     </body>
   </html>
