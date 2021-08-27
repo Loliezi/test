@@ -171,7 +171,7 @@ jQuery(function($){
 
 	jQuery(window).load(function() { // makes sure the whole site is loaded
       $('.progress').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(100).fadeOut(); // will fade out the white DIV that covers the website.
+      $('#preloader').fadeOut(); // will fade out the white DIV that covers the website.
       $('body').delay(100).css({'overflow':'visible'});
     })
 	  
