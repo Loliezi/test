@@ -492,13 +492,12 @@
       <script src="js/custom.js"></script>
       <script>$(window).load(function(){$('#preloader').fadeOut()})</script>
 <script>
-  .dark,
-.dark * {
-    background-color: #222;
-    color: #e6e6e6;
-    border-color: #e6e6e6;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
-  $( "body" ).addClass( "dark" );
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 </script>
     </body>
   </html>
