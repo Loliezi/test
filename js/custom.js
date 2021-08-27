@@ -38,11 +38,14 @@ jQuery(function($){
 
 	var owl = $("#owl-carousel"); 
     owl.owlCarousel({
-        items : 4, //4 items above 1024px browser width
-        itemsDesktop : [1024,3], //3 items between 1024px and 901px
-        itemsDesktopSmall : [900,2], // betweem 900px and 601px
-        itemsTablet: [600,1], //1 items between 600 and 0
-        itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
+        items: 4,
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
     });
     // Slide Navigation
     jQuery(".next").click(function(){
