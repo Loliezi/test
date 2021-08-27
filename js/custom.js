@@ -45,13 +45,13 @@ jQuery(function($){
         //itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
     });
     // Slide Navigation
-    jQuery(".next").click(function(){
-        owl.trigger('owl.next');
-    });
+    //jQuery(".next").click(function(){
+        //owl.trigger('owl.next');
+    //});
 
-    jQuery(".prev").click(function(){
-        owl.trigger('owl.prev');
-    });
+    //jQuery(".prev").click(function(){
+        //owl.trigger('owl.prev');
+    //});
 
 
     /* ----------------------------------------------------------- */
