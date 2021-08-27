@@ -1,1 +1,1 @@
-this isn't my website. my friend needed help on it.
+this isn't my website. a friend needed help on it.
