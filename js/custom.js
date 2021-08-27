@@ -24,26 +24,11 @@
 **/
 
 jQuery(function($){
-    /* ----------------------------------------------------------- */
-	/*  4. PORTFOLIO SLIDER
-	/* ----------------------------------------------------------- */
-
-	jQuery('#portfolio-list').mixItUp();	
-
-	/* ----------------------------------------------------------- */
-	/*  5. COUNTER
-	/* ----------------------------------------------------------- */
-
-	jQuery('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });	  
-
 	/* ----------------------------------------------------------- */
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl2 = $("#owl-carousel2"); 
+	var owl2 = $(".owl-carousel2"); 
     owl2.owlCarousel({
         items : 2, //4 items above 1024px browser width
         itemsDesktop : [1024,2], //3 items between 1024px and 901px
