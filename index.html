@@ -490,18 +490,8 @@
 
       <!-- Custom Js -->
       <script src="js/custom.js"></script>
-      <!--script>
-        window.addEventListener('load', function () {
-          document.getElementById("preloader").style.display = "none"
-        })
-      </script-->
-<!--script>
-  $('#preloader').fadeOut()
-</script-->
-<script>
-  $(window).load(function() { 
-$("#preloader").fadeOut("slowly");
-});
-</script>
+      <script>
+        $(window).load($("#preloader").fadeOut("slowly"););
+      </script>
     </body>
   </html>
