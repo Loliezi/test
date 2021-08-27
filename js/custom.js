@@ -37,13 +37,13 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 
 	var owl = $("#owl-carousel"); 
-    owl.owlCarousel({
+    //#owl.owlCarousel({
         //items : 4, //4 items above 1024px browser width
         //itemsDesktop : [1024,3], //3 items between 1024px and 901px
         //itemsDesktopSmall : [900,2], // betweem 900px and 601px
         //itemsTablet: [600,1], //1 items between 600 and 0
         //itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
-    });
+    //});
     // Slide Navigation
     //jQuery(".next").click(function(){
         //owl.trigger('owl.next');
