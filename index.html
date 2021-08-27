@@ -491,8 +491,7 @@
       <!-- Custom Js -->
       <script src="js/custom.js"></script>
       <script>
-        google.maps.event.addListenerOnce(map, 'idle', function () {
-          document.getElementById("preloader").style.display = "none";
+        google.maps.event.addListenerOnce(map, 'idle', document.getElementById("preloader").style.display = "none"; {
         });
       </script>
     </body>
