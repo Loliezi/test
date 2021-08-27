@@ -491,11 +491,9 @@
       <!-- Custom Js -->
       <script src="js/custom.js"></script>
       <script>
-        function myFunction() {
+        window.addEventListener('load', function () {
           document.getElementById("preloader").style.display = "none"
-        }
-        google.maps.event.addListenerOnce(map, 'idle', function () {
-        });
+        })
       </script>
     </body>
   </html>
