@@ -23,8 +23,7 @@
 	
 **/
 
-jQuery(function($){
-jQuery(document).ready(function() {
+
 
 	/* ----------------------------------------------------------- */
 	/*  1. Mobile MENU
@@ -211,6 +210,3 @@ jQuery(document).ready(function() {
         scrollTop: $("#footer").offset().top},
         'slow');
 	});
-
-	});
-});
