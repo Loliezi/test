@@ -36,7 +36,7 @@ jQuery(function($){
 	/*  2. Experience SLider(Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl = $("#owl-carousel"); 
+	/*var owl = $("#owl-carousel"); 
     owl.owlCarousel({
         items : 4, //4 items above 1024px browser width
         itemsDesktop : [1024,3], //3 items between 1024px and 901px
@@ -94,7 +94,7 @@ jQuery(function($){
 	/*  6. TESTIMONIAL SLIDER (Owl Carousel)
 	/* ----------------------------------------------------------- */
 
-	var owl2 = $("#owl-carousel2"); 
+	/*var owl2 = $("#owl-carousel2"); 
     owl2.owlCarousel({
         items : 2, //4 items above 1024px browser width
         itemsDesktop : [1024,2], //3 items between 1024px and 901px
@@ -169,7 +169,11 @@ jQuery(function($){
 	/*  8. PRELOADER 
 	/* ----------------------------------------------------------- */ 
 
-	jQuery(window).load(function(){$('#preloader').fadeOut()})
+	jQuery(window).load(function() { // makes sure the whole site is loaded
+      $('.progress').fadeOut(); // will first fade out the loading animation
+      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(100).css({'overflow':'visible'});
+    })
 	  
 	/* ----------------------------------------------------------- */
 	/* 9. CALL TO ABOUT
