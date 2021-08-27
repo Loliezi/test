@@ -499,7 +499,15 @@
   $('#preloader').fadeOut()
 </script-->
 <script>
-  transition:1s ease;
+  #preloader {
+  position: absolute;
+  z-index: 1000;
+  background-color:black;
+  width: 100vw;
+  height: 100vh;
+  color:white;
+  transition: 0.5s all linear
+}
   document.getElementById("preloader").style.opacity = 0;
 </script>
     </body>
