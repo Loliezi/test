@@ -22,15 +22,15 @@
 	
 	
 **/
-$(document).ready(function() {
-jQuery(function($){
+
+(function($){
 
 
 	/* ----------------------------------------------------------- */
 	/*  1. Mobile MENU
 	/* ----------------------------------------------------------- */
 
-    jQuery(".button-collapse").sideNav();
+    (".button-collapse").sideNav();
     
 	/* ----------------------------------------------------------- */
 	/*  2. Experience SLider(Owl Carousel)
@@ -45,11 +45,11 @@ jQuery(function($){
         itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
     });
     // Slide Navigation
-    jQuery(".next").click(function(){
+    (".next").click(function(){
         owl.trigger('owl.next');
     });
 
-    jQuery(".prev").click(function(){
+    (".prev").click(function(){
         owl.trigger('owl.prev');
     });
 
@@ -67,11 +67,11 @@ jQuery(function($){
 	    itemsMobile : 1 // itemsMobile disabled - inherit from itemsTablet option
 	});
 	// Slide Navigation
-	jQuery(".next1").click(function(){
+	(".next1").click(function(){
 	    owl1.trigger('owl.next');
 	});
 
-	jQuery(".prev1").click(function(){
+	(".prev1").click(function(){
 	    owl1.trigger('owl.prev');
 	});
 	
@@ -79,13 +79,13 @@ jQuery(function($){
 	/*  4. PORTFOLIO SLIDER
 	/* ----------------------------------------------------------- */
 
-	jQuery('#portfolio-list').mixItUp();	
+	('#portfolio-list').mixItUp();	
 
 	/* ----------------------------------------------------------- */
 	/*  5. COUNTER
 	/* ----------------------------------------------------------- */
 
-	jQuery('.counter').counterUp({
+	('.counter').counterUp({
         delay: 10,
         time: 1000
     });	  
@@ -104,11 +104,11 @@ jQuery(function($){
     });
 
     // Slide Navigation
-    jQuery(".next2").click(function(){
+    (".next2").click(function(){
         owl2.trigger('owl.next');
     });
 
-    jQuery(".prev2").click(function(){
+    (".prev2").click(function(){
         owl2.trigger('owl.prev');
     });
 	 
@@ -136,14 +136,14 @@ jQuery(function($){
 	menuItems.click(function(e){
 	  var href = $(this).attr("href"),
 	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+15;
-	  jQuery('html, body').stop().animate({ 
+	  ('html, body').stop().animate({ 
 	      scrollTop: offsetTop
 	  }, 900);
 	  e.preventDefault();
 	});
 
 	// Bind to scroll
-	jQuery(window).scroll(function(){
+	(window).scroll(function(){
 	   // Get container scroll position
 	   var fromTop = $(this).scrollTop()+topMenuHeight;
 	   
@@ -169,7 +169,7 @@ jQuery(function($){
 	/*  8. PRELOADER 
 	/* ----------------------------------------------------------- */ 
 
-	jQuery(window).load(function() { // makes sure the whole site is loaded
+	(window).load(function() { // makes sure the whole site is loaded
       $('.progress').fadeOut(); // will first fade out the loading animation
       $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
       $('body').delay(100).css({'overflow':'visible'});
@@ -179,8 +179,8 @@ jQuery(function($){
 	/* 9. CALL TO ABOUT
 	/* ----------------------------------------------------------- */ 
 	
-	jQuery(".call-to-about").click(function() {
-    jQuery('html,body').animate({
+	(".call-to-about").click(function() {
+    ('html,body').animate({
         scrollTop: $("#about").offset().top},
         'slow');
 	});
@@ -189,8 +189,8 @@ jQuery(function($){
 	/* 10. BOTTOM TO UP
 	/* ----------------------------------------------------------- */ 
 
-	jQuery(".up-btn").click(function() {
-    jQuery('html,body').animate({
+	(".up-btn").click(function() {
+    ('html,body').animate({
         scrollTop: $("#header").offset().top},
         'slow');
 	});
@@ -199,19 +199,18 @@ jQuery(function($){
 	/* 11. PARALLAX HEADER
 	/* ----------------------------------------------------------- */ 
 
-	jQuery('.parallax').parallax();
+	('.parallax').parallax();
 
 	/* ----------------------------------------------------------- */
 	/* 12. HIRE ME SCROLL
 	/* ----------------------------------------------------------- */ 
 
-	jQuery(".hire-me-btn").click(function(e) {
+	(".hire-me-btn").click(function(e) {
 		e.preventDefault();
-    jQuery('html,body').animate({
+    ('html,body').animate({
         scrollTop: $("#footer").offset().top},
         'slow');
 	});
 
 	
-});
 });
